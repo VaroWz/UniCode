@@ -5,14 +5,15 @@ def main():
     for k in range(2, x):
 
         i = k / 2
-        if i.is_integer() == False:
+        if not i.is_integer():
             b = k / 3
-            if b.is_integer() == False:
+            if not b.is_integer():
                 c = k / 5
-                if c.is_integer() == False:
+                if not c.is_integer():
                     d = k / 7
-                    if d.is_integer() == False:
+                    if not d.is_integer():
                         print(k)
+
 
 if __name__ == '__main__':
     main()
