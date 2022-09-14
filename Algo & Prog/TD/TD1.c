@@ -32,7 +32,14 @@ int main(){
         printf("L'oppose de la valeur est %i\n", v+(-v)-v);
     }
     int choix;
-    printf("Tapez 1 pour ecrire le double de la valeur\nTapez 2 pour ecrire le triple de la valeur\nTapez 3 pour ecrire l'oppose de la valeur\n");
+    printf("Tapez 1 pour ecrire le double de la valeur\n"
+           "Tapez 2 pour ecrire le triple de la valeur\n"
+           "Tapez 3 pour ecrire l'oppose de la valeur\n"
+           "Tapez 4 pour lister les chiffres entre 0 et la valeur\n"
+           "Tapez 5 pour lister tous les multiples de 3 entre 1 et la valeur\n"
+           "Tapez 6 pour ecrire le nombre de multiple de 3 entre 1 et la valeur\n"
+           "Tapez 7 pour ecrire la somme des entiers entre 0 et la valeur\n"
+           "Tapez 8 pour afficher la moyenne de la somme des entiers entre 0 et la valeur\n");
     scanf("%i", &choix);
     int multiple=0;
     int somme=0;
@@ -89,13 +96,11 @@ int main(){
         case 7:
             if(v>0){
                 for (int compteur = 0 ; compteur < v ; compteur++){
-                    printf("%i\n", compteur+1);
                     somme=somme+compteur;
                 }
             }
             else {
                 for (int compteur = 0; compteur > v; compteur--) {
-                    printf("%i\n", compteur - 1);
                     somme=somme+compteur;
                 }
             }
@@ -104,14 +109,12 @@ int main(){
         case 8:
             if(v>0){
                 for (int compteur = 0 ; compteur < v ; compteur++){
-                    printf("%i\n", compteur+1);
                     moyenne++;
                     somme=somme+compteur;
                 }
             }
             else {
                 for (int compteur = 0; compteur > v; compteur--) {
-                    printf("%i\n", compteur - 1);
                     moyenne++;
                     somme=somme+compteur;
                 }
@@ -166,8 +169,5 @@ int main(){
     printf("Il y a %i multiples de 3 compris entre 1 et la valeur.\n", multiple);
     printf("La somme des entiers compris entre 1 et la valeur est %i\n", somme);
     printf("La moyenne de la somme des entiers compris entre 1 et cette valeur est %i\n", somme/moyenne);*/
-
-
-
 
 }
